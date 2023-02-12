@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BG Gradient</title>
+    <style>
+      div {
+        width: 600;
+        height: 800px;
+        background-color: red;
+        background: linear-gradient(to bottom right, red, yellow, blue);
+        background: linear-gradient(45deg, red, yellow, blue);
+        background: repeating-linear-gradient(
+          to top,
+          red 10%,
+          rgb(49, 49, 27) 20%,
+          blue 20%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <h1>BG Gradient</h1>
+    <div></div>
+  </body>
+</html>

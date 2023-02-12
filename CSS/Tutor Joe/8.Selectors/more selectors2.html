@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>more selectors 2</title>
+    <style>
+      /* .box > p {
+        /* child selector */
+      /* color: red; */
+      /* } */
+      .box + p {
+        /* adjacent selector */
+        color: red;
+      }
+      div[class~="inner"] {
+        /* attribute selector */
+        background-color: aquamarine;
+      }
+      .txt {
+        color: white;
+      }
+      a[title="Link1"] {
+        color: orange;
+      }
+      a[href$="#"] {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>more selectors 2</h1>
+    <div class="box">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, placeat?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, placeat?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, placeat?
+      </p>
+      <div class="inner txt">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+          placeat?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+          placeat?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+          placeat?
+        </p>
+      </div>
+    </div>
+    <div id="first">This is id</div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, placeat?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, placeat?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, placeat?
+    </p>
+    <a href="#" title="Link1">Link1</a>
+    <a href="#" title="Link2">Link2</a>
+    <a href="#" title="Link3">Link3</a>
+    <a href="#" title="Link4">Link4</a>
+  </body>
+</html>

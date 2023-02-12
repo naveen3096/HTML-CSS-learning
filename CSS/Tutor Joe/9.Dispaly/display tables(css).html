@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display table in css</title>
+    <style>
+      .table {
+        margin-top: 100px;
+        margin-left: 100px;
+        width: 600px;
+        display: table;
+      }
+      .row {
+        /*tr*/
+        display: table-row;
+      }
+      .col {
+        /*td*/
+        border: 1px solid black;
+        padding: 10px 30px;
+        display: table-cell;
+      }
+      .header {
+        /*th*/
+        font-weight: bold;
+        text-align: center;
+        background-color: orange;
+        color: white;
+        display: table-header-group;
+      }
+      .footer {
+        /*tfoot*/
+        display: table-footer-group;
+      }
+      .col-group {
+        /*colgroup*/
+        display: table-column-group;
+      }
+      .tbl-col {
+        /*col*/
+        display: table-column;
+      }
+      .col-2 {
+        width: 30px;
+        background-color: aquamarine;
+      }
+      .row-group {
+        color: brown;
+        display: table-row-group;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="table">
+      <div class="col-group">
+        <div class="tbl-col">col-1</div>
+        <div class="tbl-col col-2">col-2</div>
+        <div class="tbl-col">col-3</div>
+      </div>
+      <div class="header">
+        <div class="row">
+          <div class="col">Name</div>
+          <div class="col">Age</div>
+          <div class="col">City</div>
+        </div>
+      </div>
+      <div class="row-group">
+        <div class="row">
+          <div class="col">Ram</div>
+          <div class="col">25</div>
+          <div class="col">Salem</div>
+        </div>
+        <div class="row">
+          <div class="col">Naveen</div>
+          <div class="col">27</div>
+          <div class="col">namakkal</div>
+        </div>
+        <div class="row">
+          <div class="col">tiya</div>
+          <div class="col">28</div>
+          <div class="col">karur</div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="row">
+          <div class="col">Total students</div>
+          <div class="col"></div>
+          <div class="col">5</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

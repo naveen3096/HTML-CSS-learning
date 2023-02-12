@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Style Preferences</title>
+    <style>
+      .test {
+        color: gold;
+      }
+      #box p {
+        color: red;
+      }
+      p {
+        color: green !important;
+        /* important breaks the execution priority */
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+      doloribus at rem, vel incidunt nostrum qui blanditiis tempora animi
+      repudiandae a quam expedita molestiae dolore asperiores id debitis ut sed!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+      doloribus at rem, vel incidunt nostrum qui blanditiis tempora animi
+      repudiandae a quam expedita molestiae dolore asperiores id debitis ut sed!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+      doloribus at rem, vel incidunt nostrum qui blanditiis tempora animi
+      repudiandae a quam expedita molestiae dolore asperiores id debitis ut sed!
+    </p>
+    <div id="box">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+        doloribus at rem, vel incidunt nostrum qui blanditiis tempora animi
+        repudiandae a quam expedita molestiae dolore asperiores id debitis ut
+        sed!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+        doloribus at rem, vel incidunt nostrum qui blanditiis tempora animi
+        repudiandae a quam expedita molestiae dolore asperiores id debitis ut
+        sed!
+      </p>
+      <p class="test">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+        doloribus at rem, vel incidunt nostrum qui blanditiis tempora animi
+        repudiandae a quam expedita molestiae dolore asperiores id debitis ut
+        sed!
+      </p>
+    </div>
+  </body>
+</html>
+
+<!-- Execution priorities
+
+1.id
+2.class
+3.element -->

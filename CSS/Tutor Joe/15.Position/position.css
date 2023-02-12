@@ -1,0 +1,31 @@
+
+
+
+
+.main{
+    
+}
+.box1{
+    position: fixed;
+    top:0;
+    right:0
+}
+.box2{
+
+
+}
+.box3{
+
+}
+
+
+
+
+/* 1.Static
+2.Relative
+    LTRB
+3.Absolute
+    LTRB
+    Relative
+4.Fixed
+5.Sticky */

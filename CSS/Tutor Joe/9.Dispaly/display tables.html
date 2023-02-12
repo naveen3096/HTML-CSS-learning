@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Tables</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      table tr:nth-of-type(even) {
+        background-color: aliceblue;
+      }
+      table td:nth-of-type(even) {
+        background-color: burlywood;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dispalt Tables</h1>
+    <table width="50%" border="1px" cellpadding="10px" cellspacing="10px">
+      <caption>
+        Student Details
+      </caption>
+      <colgroup>
+        <col style="width: 150px" />
+        <col style="width: 50px" />
+        <col />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>NAME</th>
+          <th>AGE</th>
+          <th>CITY</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>naveen</td>
+          <td>26</td>
+          <td>namakkal</td>
+        </tr>
+        <tr>
+          <td>john</td>
+          <td>16</td>
+          <td>chennai</td>
+        </tr>
+        <tr>
+          <td>Ram</td>
+          <td>28</td>
+          <td rowspan="2">Salem</td>
+          <!-- rowspan = merges the common value -->
+        </tr>
+        <tr>
+          <td>Taman</td>
+          <td>16</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <td colspan="3">Naveen Kumar</td>
+      </tfoot>
+    </table>
+  </body>
+</html>
